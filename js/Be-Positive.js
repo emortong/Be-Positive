@@ -116,7 +116,7 @@ BloodTransfusionRules = {
 
       case '0_NEG':
       bloodTypes = [
-      O_NEG
+      'O_NEG'
       ]
       break;
     }
