@@ -57,9 +57,9 @@ BloodTransfusionRules = {
         bloodTypes = [
         'O_NEG',
         'O_POS',
+        'A_NEG',
         'B_NEG',
         'B_POS',
-        'A_NEG',
         'A_POS',
         'AB_NEG',
         'AB_POS'
@@ -69,8 +69,8 @@ BloodTransfusionRules = {
       case 'AB_NEG':
       bloodTypes = [
         'O_NEG',
-        'B_NEG',
         'A_NEG',
+        'B_NEG',
         'AB_NEG'
         ]
       break;
