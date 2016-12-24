@@ -55,80 +55,79 @@ BloodTransfusionRules = {
     switch(patient.blood_type) {
       case 'AB_POS':
         bloodTypes = [
-        'AB_POS',
-        'AB_NEG',
-        'A_POS',
-        'A_NEG',
-        'B_POS',
-        'B_NEG',
+        'O_NEG',
         'O_POS',
-        'O_NEG'
+        'B_NEG',
+        'B_POS',
+        'A_NEG',
+        'A_POS',
+        'AB_NEG',
+        'AB_POS'
         ]
       break;
 
       case 'AB_NEG':
       bloodTypes = [
-        'AB_NEG',
-        'A_NEG',
+        'O_NEG',
         'B_NEG',
-        'O_NEG'
+        'A_NEG',
+        'AB_NEG'
         ]
       break;
 
       case 'A_POS':
       bloodTypes = [
-        'A_POS',
-        'A_NEG',
+        'O_NEG',
         'O_POS',
-        'O_NEG'
+        'A_NEG',
+        'A_POS'
         ]
       break;
 
       case 'A_NEG':
       bloodTypes = [
-        'A_NEG',
-        'O_NEG'
+        'O_NEG',
+        'A_NEG'
         ]
       break;
 
       case 'B_POS':
       bloodTypes = [
-        'B_POS',
-        'B_NEG',
+        'O_NEG',
         'O_POS',
-        'O_NEG'
+        'B_NEG',
+        'B_POS'
         ]
       break;
 
       case 'B_NEG':
       bloodTypes = [
-        'B_NEG',
         'O_NEG',
+        'B_NEG'
         ]
       break;
 
       case 'O_POS':
       bloodTypes = [
-        'O_POS',
-        'O_NEG'
+        'O_NEG',
+        'O_POS'
         ]
       break;
 
-      case '0_NEG':
+      case 'O_NEG':
       bloodTypes = [
-      'O_NEG'
-      ]
+        'O_NEG'
+        ]
       break;
     }
 
     for(var i = 0; i < bloodTypes.length; i++) {
-      if(blood_inventory[bloodTypes[i]] > 0) {
+      if(blood_inventory[bloodTypes[i]] > 0 ) {
         bloodToReturn = BloodType[bloodTypes[i]];
       }
     }
 
     return bloodToReturn;
-
   }
 
 };
